@@ -9,7 +9,7 @@ all:
 	grub-mkrescue -o build/myos.iso isodir
 
 run:
-	qemu-system-i386 -kernel build/myos.bin
+	qemu-system-i386 -cdrom build/myos.iso
 
 # compile and run
 mr: all run

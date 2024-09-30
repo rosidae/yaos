@@ -1,3 +1,7 @@
 credits to:
-	https://wiki.osdev.org/Bare_Bones
-	https://wiki.osdev.org/GCC_Cross-Compiler
+1.	https://wiki.osdev.org/Bare_Bones
+2.	https://wiki.osdev.org/GCC_Cross-Compiler
+	 use this to set-up a cross compiler, if instructions are followed exactly, 
+	you should be able to run the makefile without any troubles
+
+	 make sure to install grub-pc-bin
