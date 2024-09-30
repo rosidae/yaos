@@ -34,13 +34,6 @@ void cls() {
 	}
 }
 
-void initialize() {
-	col = 0;
-	row = 0;
-	cls();
-	move_cursor((struct v2){0, 0});
-}
-
 void putc(char c, bool puts) {
 	if (c == '\n') {
 		col = 0;
@@ -68,7 +61,15 @@ void puts(const char* str) {
 	move_cursor((struct v2){col, row});
 }
 
+void initialize() {
+	col = 0;
+	row = 0;
+	cls();
+	move_cursor((struct v2){0, 0});
+	puts("initialized\n");
+}
+
 void kernel_main() {
 	initialize();
-	puts("Hello, World!");
+	puts("Welcome to the YAOS kernel");
 }
